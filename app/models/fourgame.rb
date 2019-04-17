@@ -1,0 +1,2 @@
+class Fourgame < ApplicationRecord
+end
