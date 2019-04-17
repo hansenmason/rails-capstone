@@ -1,5 +1,5 @@
-class FourgamesController < ApplicationController
-  before_action :set_fourgame, only: [:show, :update, :destroy]
+class FourgamesController < OpenReadController
+  before_action :set_fourgame, only: [:update, :destroy]
 
   # GET /fourgames
   def index
@@ -10,12 +10,14 @@ class FourgamesController < ApplicationController
 
   # GET /fourgames/1
   def show
+    @fourgame = Fourgame.find(params[:id])
+
     render json: @fourgame
   end
 
   # POST /fourgames
   def create
-    @fourgame = Fourgame.new(fourgame_params)
+    @fourgame = current_user.fourgames.build(fourgame_params)
 
     if @fourgame.save
       render json: @fourgame, status: :created, location: @fourgame
@@ -41,7 +43,7 @@ class FourgamesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_fourgame
-      @fourgame = Fourgame.find(params[:id])
+      @fourgame = current_user.fourgames.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.

@@ -1,3 +1,3 @@
 class FourgameSerializer < ActiveModel::Serializer
-  attributes :id, :pico, :fumi, :bagel, :number
+  attributes :id, :pico, :fumi, :bagel, :number, :user_id
 end

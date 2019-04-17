@@ -1,5 +1,5 @@
-class GamesController < ApplicationController
-  before_action :set_game, only: [:show, :update, :destroy]
+class GamesController < OpenReadController
+  before_action :set_game, only: [:update, :destroy]
 
   # GET /games
   def index
@@ -10,12 +10,14 @@ class GamesController < ApplicationController
 
   # GET /games/1
   def show
+    @game = Game.find(params[:id])
+
     render json: @game
   end
 
   # POST /games
   def create
-    @game = Game.new(game_params)
+    @game = current_user.games.build(game_params)
 
     if @game.save
       render json: @game, status: :created, location: @game
@@ -41,7 +43,7 @@ class GamesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_game
-      @game = Game.find(params[:id])
+      @game = current_user.games.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
