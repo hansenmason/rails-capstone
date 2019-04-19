@@ -175,7 +175,7 @@ tests in RSpec to test your API.
 Request:
 
 ```sh
-curl http://localhost:4741/games \
+curl https://hansenmason.github.io/react-capstone/#/games \
   --include \
   --request GET \
   --header "Content-Type: application/json" \
@@ -215,7 +215,7 @@ Request:
 ```sh
 #!/bin/bash
 
-curl "http://localhost:4741/games/${ID}" \
+curl "https://hansenmason.github.io/react-capstone/#/games/${ID}" \
   --include \
   --request GET \
   --header "Content-Type: application/json" \
@@ -250,7 +250,7 @@ Request:
 ```sh
 #!/bin/bash
 
-curl "http://localhost:4741/games" \
+curl "https://hansenmason.github.io/react-capstone/#/games" \
   --include \
   --request POST \
   --header "Content-Type: application/json" \
@@ -275,7 +275,7 @@ Response:
 
 ```md
 HTTP/1.1 201 Created
-Location: http://localhost:4741/games/6
+Location: https://hansenmason.github.io/react-capstone/#/games/6
 Content-Type: application/json; charset=utf-8
 ETag: W/"85400c3ce144089118f509f73f512d46"
 Cache-Control: max-age=0, private, must-revalidate
@@ -294,7 +294,7 @@ Request:
 ```sh
 #!/bin/bash
 
-curl "http://localhost:4741/games/${ID}" \
+curl "https://hansenmason.github.io/react-capstone/#/games/${ID}" \
   --include \
   --request PATCH \
   --header "Content-Type: application/json" \
@@ -339,7 +339,7 @@ Request:
 ```sh
 #!/bin/bash
 
-curl "http://localhost:4741/games/${ID}" \
+curl "https://hansenmason.github.io/react-capstone/#/games/${ID}" \
   --include \
   --request DELETE \
   --header "Content-Type: application/json" \
@@ -373,7 +373,7 @@ Vary: Origin
 Request:
 
 ```sh
-curl http://localhost:4741/fourgames \
+curl http://https://hansenmason.github.io/react-capstone/#/fourgames \
   --include \
   --request GET \
   --header "Content-Type: application/json" \
@@ -404,7 +404,7 @@ Transfer-Encoding: chunked
 |------|-------------|-------------------|
 | GET  | `/fourgames`    | `fourgames#index`     |
 | GET  | `/fourgames/1`  | `fourgames#show`      |
-| PATCH| `/fourgames/1`  | `games#update`    |
+| PATCH| `/fourgames/1`  | `fourgames#update`    |
 
 #### SHOW /fourgames/:id
 
@@ -413,7 +413,7 @@ Request:
 ```sh
 #!/bin/bash
 
-curl "http://localhost:4741/fourgames/${ID}" \
+curl "https://hansenmason.github.io/react-capstone/#/fourgames/${ID}" \
   --include \
   --request GET \
   --header "Content-Type: application/json" \
@@ -448,7 +448,7 @@ Request:
 ```sh
 #!/bin/bash
 
-curl "http://localhost:4741/fourgames" \
+curl "https://hansenmason.github.io/react-capstone/#/fourgames" \
   --include \
   --request POST \
   --header "Content-Type: application/json" \
@@ -473,7 +473,7 @@ Response:
 
 ```md
 HTTP/1.1 201 Created
-Location: http://localhost:4741/fourgames/6
+Location: https://hansenmason.github.io/react-capstone/#/fourgames/6
 Content-Type: application/json; charset=utf-8
 ETag: W/"85400c3ce144089118f509f73f512d46"
 Cache-Control: max-age=0, private, must-revalidate
@@ -492,7 +492,7 @@ Request:
 ```sh
 #!/bin/bash
 
-curl "http://localhost:4741/fourgames/${ID}" \
+curl "https://hansenmason.github.io/react-capstone/#/fourgames/${ID}" \
   --include \
   --request PATCH \
   --header "Content-Type: application/json" \
@@ -537,7 +537,7 @@ Request:
 ```sh
 #!/bin/bash
 
-curl "http://localhost:4741/fourgames/${ID}" \
+curl "https://hansenmason.github.io/react-capstone/#/fourgames/${ID}" \
   --include \
   --request DELETE \
   --header "Content-Type: application/json" \
@@ -571,7 +571,7 @@ Vary: Origin
 Request:
 
 ```sh
-curl http://localhost:4741/sign-up \
+curl https://hansenmason.github.io/react-capstone/#/sign-up \
   --include \
   --request POST \
   --header "Content-Type: application/json" \
@@ -607,7 +607,7 @@ Content-Type: application/json; charset=utf-8
 Request:
 
 ```sh
-curl http://localhost:4741/sign-in \
+curl https://hansenmason.github.io/react-capstone/#/sign-in \
   --include \
   --request POST \
   --header "Content-Type: application/json" \
@@ -643,7 +643,7 @@ Content-Type: application/json; charset=utf-8
 Request:
 
 ```sh
-curl --include --request PATCH "http://localhost:4741/change-password" \
+curl --include --request PATCH "https://hansenmason.github.io/react-capstone/#/change-password" \
   --header "Authorization: Token token=$TOKEN" \
   --header "Content-Type: application/json" \
   --data '{
@@ -669,7 +669,7 @@ HTTP/1.1 204 No Content
 Request:
 
 ```sh
-curl http://localhost:4741/sign-out \
+curl https://hansenmason.github.io/react-capstone/#/sign-out \
   --include \
   --request DELETE \
   --header "Authorization: Token token=$TOKEN"
@@ -698,7 +698,7 @@ HTTP/1.1 204 No Content
 Request:
 
 ```sh
-curl http://localhost:4741/users \
+curl https://hansenmason.github.io/react-capstone/#/users \
   --include \
   --request GET \
   --header "Authorization: Token token=$TOKEN"
@@ -733,7 +733,7 @@ Content-Type: application/json; charset=utf-8
 Request:
 
 ```sh
-curl --include --request GET http://localhost:4741/users/$ID \
+curl --include --request GET https://hansenmason.github.io/react-capstone/#/users/$ID \
   --header "Authorization: Token token=$TOKEN"
 ```
 
@@ -760,7 +760,7 @@ Content-Type: application/json; charset=utf-8
 Request:
 
 ```sh
-curl "http://localhost:4741/users/${ID}" \
+curl "https://hansenmason.github.io/react-capstone/#/users/${ID}" \
   --include \
   --request PATCH \
   --header "Authorization: Token token=${TOKEN}" \
