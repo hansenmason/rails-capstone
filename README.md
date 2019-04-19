@@ -1,15 +1,3 @@
-Rails[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
-
-# rails-api-template
-
-A template for starting projects with `rails-api`. Includes authentication.
-
-At the beginning of each cohort, update the versions in [`Gemfile`](Gemfile).
-
-## Prerequisites
-
--   [rails-api-examples-walkthrough](https://git.generalassemb.ly/ga-wdi-boston/rails-api-examples-walkthrough)
-
 ## Dependencies
 
 Install with `bundle install`.
@@ -20,7 +8,6 @@ Install with `bundle install`.
 -   [`ruby`](https://www.ruby-lang.org/en/)
 -   [`postgres`](http://www.postgresql.org)
 
-## Installation
 ## Pico Fermi
 
 My app is a game called "pico fermi bagel". A secret number is generated upon
@@ -37,7 +24,7 @@ three digit game lists and four digit game lists. However, a user may only edit 
 their own created games, that includes renaming the pico fermi bagel names. Enjoy!
 
 
-Link to back end github repo: https://github.com/hansenmason/rails-capstone
+Link to front end github repo: https://github.com/hansenmason/react-capstone
 Link to deployed front end:
 Link to deployed back end:
 
@@ -57,10 +44,6 @@ it was having to put the game logic and randomnumber into the update file,
 but I thought this would be too much, and figured there must have been a way
 to make a form for it but was unable to do so. I hope to solve this, as well as
 add more digit types into the mix.
-
-## Screenshot
-
-![alt text](screenshots/CapstoneSS.png)
 
 ## Planningg
 
